@@ -16,8 +16,9 @@ subjects = {"수학","영어"}
 
 gld = discord.Guild
 
-file = open("token.txt.gitignore", "r")
-token = file.read()
+file = open("token.txt", "r")
+file2 = open("token2.txt","r")
+token = file.read() + file2.read()
 
 @client.event
 async def on_ready():
